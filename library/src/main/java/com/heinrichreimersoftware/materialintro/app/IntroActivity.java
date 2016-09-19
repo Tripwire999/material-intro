@@ -20,6 +20,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.graphics.ColorUtils;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -181,6 +182,7 @@ public class IntroActivity extends AppCompatActivity {
     private void skipIfEnabled() {
         if (skipEnabled) {
             finish();
+            Log.d("DEBUG", "TEST");
 //            int count = getCount();
 //            int endPosition = pager.getCurrentItem();
 //            while (endPosition < count && canGoForward(endPosition, true)) {
