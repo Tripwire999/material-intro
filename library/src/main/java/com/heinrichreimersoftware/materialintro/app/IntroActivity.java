@@ -180,12 +180,13 @@ public class IntroActivity extends AppCompatActivity {
 
     private void skipIfEnabled() {
         if (skipEnabled) {
-            int count = getCount();
-            int endPosition = pager.getCurrentItem();
-            while (endPosition < count && canGoForward(endPosition, true)) {
-                endPosition++;
-            }
-            pager.setCurrentItem(endPosition);
+            finish();
+//            int count = getCount();
+//            int endPosition = pager.getCurrentItem();
+//            while (endPosition < count && canGoForward(endPosition, true)) {
+//                endPosition++;
+//            }
+//            pager.setCurrentItem(endPosition);
         } else {
             previousSlide();
         }
