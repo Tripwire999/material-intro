@@ -181,8 +181,8 @@ public class IntroActivity extends AppCompatActivity {
 
     private void skipIfEnabled() {
         if (skipEnabled) {
-            finish();
             Log.d("DEBUG", "TEST");
+            finish();
 //            int count = getCount();
 //            int endPosition = pager.getCurrentItem();
 //            while (endPosition < count && canGoForward(endPosition, true)) {
